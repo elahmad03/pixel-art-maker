@@ -1,0 +1,179 @@
+*{
+    box-sizing: border-box;
+}
+body {
+       max-width: 100%;
+       height: auto;
+       font-size: 100%;
+       background: #ddd;
+       color: #000;
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+}
+img{
+       max-width: 100%;
+       height: auto;
+}
+
+h1 {
+    
+    margin: 0.2em;
+}
+
+h2 {
+    margin: 1em 0 0.25em;
+}
+
+h2:first-of-type {
+    margin-top: 0.5em;
+}
+
+table,
+tr,
+td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+tr {
+    height: 20px;
+}
+
+td {
+    width: 20px;
+}
+/*my own styles */
+ul,ol{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a:link{
+    text-decoration: none;
+}
+.clearfix:after{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+
+}
+.clearfix{
+    display: inline-block;
+
+}
+*html .clearfix{
+    height: 1%;
+}
+.clearfix{
+    display: block;
+}
+/* styles for sizepicker inputs*/
+#sizePicker input{
+    width: 20%;
+    height: 40px;
+    background: #fff;
+    color: #000;
+    padding: 5px 6px;
+    border: 2px solid #009500;
+    border-radius: 10px;
+}
+#sizePicker input[type=submit]{
+    width: 15%;
+    background: #1fc700;
+    font-weight: bold;
+}
+/*styles for hrader*/
+#header{
+    font-family: 'Arbutus',serif;
+    background-color: #1fc700;
+    background: linear-gradient(to right,#006500,#ffffff,#006000);
+    color: #000;
+    font-size: 6vw;
+    text-align: left;
+    padding: 5px 4px;
+    text-shadow: 4px 4px 4px #333;
+    border-top: 2px solid #005000;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom: 4px solid #005000;
+    margin: 0.4em 0 ;
+    
+    
+}
+
+/*styles for site main content*/
+.title{
+    font-family: 'Tangerine',sans-serif;
+}
+
+#sizePicker{
+    background-color: #1FC700;
+    background:repeating-radial-gradient(#009000,#FFFFFF 50%,#009000 50%);
+    color: #000;
+    padding: 18px 5px;
+    margin: 0 4px;
+    border: 2px solid #006C00;
+    border-radius: 20px;  
+
+}
+.instr{
+    font-family: 'Inconsolata',serif;
+}
+
+/*styles for footer*/
+#footer{
+    font-family: 'Federant',sans-serif;
+    background-color: #008500;
+    background: linear-gradient(to right,#006500,#FFFFFF,#006000);
+    color:#000;
+    text-align: left;
+    text-shadow: 4px 4px 4px #888;
+    padding: 4px 2px;
+    border-top: 4px solid #005000;
+    border-bottom: 2px solid #005000;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin: 0.4em 0 ;
+    
+}
+.contact{
+    padding: 4px 3px;
+}
+#left{
+    float: left;
+}
+#right{
+    float: right;
+}
+#footer .fCopy{
+    text-align: center;
+}
+
+/* for mobile and tablet phones*/
+
+@media screen and (max-width: 768px){
+.block{
+    display: block;
+}
+#sizePicker input[type=number]{
+    width: 90%;
+    height: 50px;
+   
+    
+}
+#sizePicker input[type=submit]{
+       width: 90%;
+       height: 50px;
+       margin-top: 0.5em;
+       
+}
+
+}

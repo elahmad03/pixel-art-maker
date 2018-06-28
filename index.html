@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="eng-EN">
+<head>
+    <title>Pixel Art Maker by ahmad!</title>
+    <meta name="viewport" content="width=device-width,initial-scale:1.0" />
+    <meta charset="utf-8" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine|Inconsolata|Droid+Sans|Suravaram|Arbutus|Felipa|Federant">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- header-->
+<header id="header">
+    <h1>Lab: Pixel Art Maker</h1>
+</header>
+
+<!--main content-->
+    <h2 class="title">Choose Grid Size</h2>
+    
+<!--TODO: add size to pixel Canvas-->
+    <form id="sizePicker">
+      <section class="instr">
+      <h3 class="title">How to Use:</h3>
+      <p><b>Step One:</b>select your desired height and width then click add size.</p>
+        <p><b>Step Two:</b>click on color picker to choose your prefered color.</p>
+        <p><b>Step Three:</b>start designing by clicking on the columns, double click to clear  when mess up enjoy!.</p>
+      </section>
+        <span class="block"> Grid Height:</span>
+        <input type="number" id="inputHeight" name="height" min="1" value="1">
+        <span class="block">Grid Width:</span>
+        <input type="number" id="inputWidth" name="width" min="1" value="1">
+        <input type="submit"value="Add Size">
+    </form>
+
+<!--TODO: add color to Pixel Canvas -->
+    <h2 class="title">Pick A Color</h2>
+    <input type="color" id="colorPicker">
+<!--TODO: Display and paint the drawing board-->
+    <h2 class="title">Design Canvas</h2>
+    <table id="pixelCanvas"></table>
+    
+<!--footer-->
+   <footer id="footer" class="clearfix">
+        
+     <ul class="contact">
+        <h3 class="ftitle">Follow me</h3>
+        <li>facebook: <a href="https://fb.com/el.ahmed5">El Ahmad</a></li>
+        <li>whatsapp: <a href="https://api.whatsapp.com/send?phone=2348164336141">Chat me</a></li>
+        <li>Contact: <a href="tel:+2348164336141">Call me</a></li>
+    
+     </ul>
+        
+     
+    <article class="fCopy">Pixel Art Maker © 2018</article> 
+     
+     
+  </footer>
+<!--Jquery-->
+   <script src="https://code.jquery.com/jquery-3.1.1.js">
+   </script>
+<!--Design Canvas Script-->   
+    <script src="designs.js"></script>
+</body>
+</html>
