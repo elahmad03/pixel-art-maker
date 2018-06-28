@@ -1,0 +1,168 @@
+*{
+	box-sizing: border-box;
+}
+body {
+	   max-width:100%;
+	   height:auto;
+	   font-size:100%;
+	   background: #ddd;
+	   color:#000;
+    text-align: center;
+    padding: 0;
+    margin:0 auto;
+}
+img{
+	   max-width:100%;
+	   height:auto;
+}
+
+h1 {
+    font-family: 'Tangerine',serif;
+    margin: 0.2em;
+}
+
+h2 {
+    margin: 1em 0 0.25em;
+}
+
+h2:first-of-type {
+    margin-top: 0.5em;
+}
+
+table,
+tr,
+td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+tr {
+    height: 20px;
+}
+
+td {
+    width: 20px;
+}
+/*my own styles */
+ul,ol{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+a:link{
+	text-decoration: none;
+}
+.clearfix:after{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+
+}
+.clearfix{
+	display: inline-block;
+
+}
+*html .clearfix{
+	height: 1%;
+}
+.clearfix{
+	display: block;
+}
+/*input styles*/
+input{
+	width: 20%;
+	height: 40px;
+	background: #FFF;
+	color:#000;
+	padding: 5px 6px;
+	border:2px solid  #009500;
+	border-radius: 10px;
+}
+input[type=submit]{
+	width: 10%;
+	background: #1FC700;
+	font-weight: bold;
+}
+#header{
+	font-family: 'Tangerine',serif;
+	background-color: #1FC700;
+	background:linear-gradient(to right,#1FA100,#FFFFFF,#006000);
+	color:#000;
+    font-size:5vw;
+    text-align: left;
+    padding: 5px 4px;
+    margin:0 0 0.4em;
+    text-shadow:4px 4px 4px #888;
+    border-bottom: 4px solid #000;
+    
+}
+.title{
+	font-family:'Arbutus',sans-serif;
+}
+#sizePicker{
+	background-color: #1FC700;
+	background:repeating-radial-gradient(#009000,#FFFFFF 50%,#009000 50%);
+	color: #000;
+	padding:18px 5px;
+	margin: 0 4px;
+	border:2px solid #006C00;
+	border-radius:20px;
+
+	
+
+}
+#footer{
+	font-family: 'Suravaram',sans-serif;
+	background-color: #1FC700;
+	background:linear-gradient(to right,#1FA100,#FFFFFF,#006000);
+	color:#000;
+    
+    text-align: left;
+    text-shadow:4px 4px 4px #888;
+    padding: 4px 2px;
+    border-top: 4px solid #000;
+    margin:0.4em 0 0;
+    
+    
+}
+.contact{
+	padding: 4px 3px;
+	font-family:'Federant',serif;
+}
+#left{
+	float: left;
+}
+#right{
+	float: right;
+}
+#footer .fCopy{
+	text-align: center;
+}
+
+/* for mobile and tablet phones*/
+
+@media screen and (max-width: 768px){
+.block{
+	display: block;
+}
+input[type=number]{
+    width: 90%;
+    height:50px;
+   
+    
+}
+input[type=submit]{
+	   width:90%;
+	   height:50px;
+	   margin-top: 0.5em;
+	   
+}
+
+}
